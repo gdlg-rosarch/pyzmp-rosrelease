@@ -1,0 +1,23 @@
+sudo: false
+language: python
+
+branches:
+  except:
+    - gh-pages
+
+python:
+  - 2.7
+  # Tests hang !
+  #- 3.4
+
+  #- pypy
+  #- pypy3
+
+install:
+  - pip install tox tox-travis
+
+script:
+  - tox
+
+notifications:
+  email: false
