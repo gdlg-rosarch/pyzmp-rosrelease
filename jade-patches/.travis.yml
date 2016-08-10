@@ -2,11 +2,19 @@ sudo: required
 dist: trusty
 language: generic
 
+branches:
+  except:
+    - /^patches.*$/  # no point in trying to build patches branch
+    - /^upstream.*$/  # upstream should already be built and tested in source repo.
+    - /^release.*$/  # upstream should already be built and tested in source repo.
+    - /^rpm.*$/  # not testing rpm builds in trusty
+
+  only:
+    - /^debian/jade/trusty/.*$/ 
+
 env:
   # This will check any ROS distro supported on this OS
   # checking devel and install separately so that they don't influence each other (dependencies, path, env, etc.)
-  - CI_ROS_DISTRO=indigo ROS_FLOW=devel
-  - CI_ROS_DISTRO=indigo ROS_FLOW=install
   - CI_ROS_DISTRO=jade ROS_FLOW=devel
   - CI_ROS_DISTRO=jade ROS_FLOW=install
 

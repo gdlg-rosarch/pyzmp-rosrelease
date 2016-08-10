@@ -1,0 +1,10 @@
+sudo: required
+dist: trusty
+language: generic
+
+branches:
+  except:
+    - master # no point in building master, there is only patches here
+
+notifications:
+  email: false
