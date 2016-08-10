@@ -1,0 +1,12 @@
+udo: required
+dist: trusty
+language: generic
+
+branches:
+  except:
+    - /^patches.*$/ # no point in building patches branches
+
+notifications:
+  email: false
+
+
