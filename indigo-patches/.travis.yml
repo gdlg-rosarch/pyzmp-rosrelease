@@ -4,13 +4,13 @@ language: generic
 
 branches:
   except:
-    - /^patches.*$/  # no point in trying to build patches branch
-    - /^upstream.*$/  # upstream should already be built and tested in source repo.
-    - /^release.*$/  # upstream should already be built and tested in source repo.
-    - /^rpm.*$/  # not testing rpm builds in trusty
+    - /^rpm/indigo/trusty/.*$/  # not testing rpm builds in trusty
+    - /^debian/indigo/trusty/.*$/ # not testing pacakge building here (ROS buildfarm will do it)
 
   only:
-    - /^debian/indigo/trusty/.*$/ 
+    # We can test release or upstream after patches have been applied
+    - /^release/.*$/ 
+    - upstream 
 
 # this is a third party package, we check only usual catkin builds.
 # Let the ros buildfarm check the actual deb package build.
