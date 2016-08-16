@@ -1,42 +1,23 @@
-sudo: required
-dist: trusty
-language: generic
+sudo: false
+language: python
 
 branches:
   except:
-    - /^patches.*$/  # no point in trying to build patches branch
-    - /^upstream.*$/  # upstream should already be built and tested in source repo.
-    - /^release.*$/  # upstream should already be built and tested in source repo.
-    - /^rpm.*$/  # not testing rpm builds in trusty
+    - gh-pages
 
-  only:
-    - /^debian/jade/trusty/.*$/ 
+python:
+  - 2.7
+  # Tests hang !
+  #- 3.4
 
-env:
-  # This will check any ROS distro supported on this OS
-  # checking devel and install separately so that they don't influence each other (dependencies, path, env, etc.)
-  - CI_ROS_DISTRO=jade ROS_FLOW=devel
-  - CI_ROS_DISTRO=jade ROS_FLOW=install
+  #- pypy
+  #- pypy3
 
 install:
-# Add ROS repositories
-  - sudo sh -c 'echo "deb http://packages.ros.org/ros-shadow-fixed/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
-  - wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
-  - sudo apt-get update
-# Install ROS base
-  - sudo apt-get install ros-$CI_ROS_DISTRO-ros-base -y
-# Install and initialize rosdep
-  - sudo apt-get install python-rosdep -y
-  - sudo `which rosdep` init
-  - rosdep update
-# Use rosdep to install pyros-setup's dependencies
-  - rosdep install --default-yes --from-paths ./ --rosdistro $CI_ROS_DISTRO
+  - pip install tox tox-travis
 
 script:
-  # full ROS setup, build and test
-  # rospack find is TMP. debugging travis env here...
-  - source /opt/ros/$CI_ROS_DISTRO/setup.bash && rospack profile
-  - bash travis_checks.sh
+  - tox
 
 notifications:
   email: false
