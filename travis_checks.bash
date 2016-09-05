@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+# first we ensure we change to the directory where this script is.
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
+
+
 # These variables need to be setup before calling this script:
 # ROS_DISTRO [indigo | jade | kinetic]
 # ROS_FLOW [devel | install]
