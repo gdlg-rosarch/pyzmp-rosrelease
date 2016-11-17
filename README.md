@@ -303,5 +303,5 @@ Releasing https://github.com/asmodehn/pyzmp for ROS
 
 | Indigo | Jade | Kinetic |
 |:------:|:----:|:-------:|
-| [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/indigo/pyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease)| [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/jade/pyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease) | [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/kinetic/pyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease)|
+| [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release%2Findigo%2Fpyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease)| [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release%2Fjade%2Fpyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease) | [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release%2Fkinetic%2Fpyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease)|
 
