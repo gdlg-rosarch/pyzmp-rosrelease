@@ -297,3 +297,11 @@ Versions of tools used:
 - vcstools version: `0.1.38`
 
 
+# pyzmp-rosrelease
+Releasing https://github.com/asmodehn/pyzmp for ROS
+
+
+| Indigo | Jade | Kinetic |
+|:------:|:----:|:-------:|
+| [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/indigo/pyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease)| [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/jade/pyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease) | [![Build Status](https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/kinetic/pyzmp)](https://travis-ci.org/asmodehn/pyzmp-rosrelease)|
+
