@@ -1,3 +1,26 @@
+## pyzmp (kinetic) - 0.0.14-7
+
+The packages in the `pyzmp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic pyzmp` on `Tue, 21 Mar 2017 08:01:14 -0000`
+
+The `pyzmp` package was released.
+
+Version of package(s) in repository `pyzmp`:
+
+- upstream repository: https://github.com/asmodehn/pyzmp.git
+- release repository: https://github.com/asmodehn/pyzmp-rosrelease.git
+- rosdistro version: `0.0.14-6`
+- old version: `0.0.14-6`
+- new version: `0.0.14-7`
+
+Versions of tools used:
+
+- bloom version: `0.5.25`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.39`
+
+
 ## pyzmp (kinetic) - 0.0.14-6
 
 The packages in the `pyzmp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic pyzmp` on `Mon, 05 Sep 2016 02:43:01 -0000`
