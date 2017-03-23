@@ -1,3 +1,26 @@
+## pyzmp (jade) - 0.0.14-1
+
+The packages in the `pyzmp` repository were released into the `jade` distro by running `/usr/bin/bloom-release --rosdistro jade --track jade pyzmp` on `Thu, 23 Mar 2017 06:10:35 -0000`
+
+The `pyzmp` package was released.
+
+Version of package(s) in repository `pyzmp`:
+
+- upstream repository: https://github.com/asmodehn/pyzmp.git
+- release repository: https://github.com/asmodehn/pyzmp-rosrelease.git
+- rosdistro version: `0.0.14-0`
+- old version: `0.0.14-0`
+- new version: `0.0.14-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.25`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.1`
+- vcstools version: `0.1.39`
+
+
 ## pyzmp (kinetic) - 0.0.14-7
 
 The packages in the `pyzmp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic pyzmp` on `Tue, 21 Mar 2017 08:01:14 -0000`
