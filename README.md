@@ -1,3 +1,26 @@
+## pyzmp (indigo) - 0.0.15-0
+
+The packages in the `pyzmp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo pyzmp` on `Tue, 02 May 2017 10:29:08 -0000`
+
+The `pyzmp` package was released.
+
+Version of package(s) in repository `pyzmp`:
+
+- upstream repository: https://github.com/asmodehn/pyzmp.git
+- release repository: https://github.com/asmodehn/pyzmp-rosrelease.git
+- rosdistro version: `0.0.14-2`
+- old version: `0.0.14-2`
+- new version: `0.0.15-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## pyzmp (indigo) - 0.0.14-2
 
 The packages in the `pyzmp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo pyzmp` on `Fri, 24 Mar 2017 08:20:28 -0000`
