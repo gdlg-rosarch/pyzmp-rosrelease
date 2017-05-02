@@ -1,19 +1,77 @@
 PyZMP
 =====
-.. image:: https://travis-ci.org/asmodehn/pyzmp.svg?branch=master
+
+
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - docs
+      - |docs|
+    * - tests
+      - |travis| |requires| |landscape| |quantifiedcode|
+    * - Python
+      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
+    * - ROS
+      -  **Indigo** |ros_indigo_pkg| **Jade** |ros_jade_pkg| **Kinetic** |ros_kinetic_pkg|
+
+.. |docs| image:: https://readthedocs.org/projects/pyzmp/badge/?style=flat
+    :target: https://readthedocs.org/projects/pytzmp
+    :alt: Documentation Status
+
+.. |travis| image:: https://travis-ci.org/asmodehn/pyzmp.svg?branch=master
+    :alt: Travis-CI Build Status
     :target: https://travis-ci.org/asmodehn/pyzmp
 
-.. image:: https://requires.io/github/asmodehn/pyzmp/requirements.svg?branch=master
-     :target: https://requires.io/github/asmodehn/pyzmp/requirements/?branch=master
-     :alt: Requirements Status
+.. |quantifiedcode| image:: https://www.quantifiedcode.com/api/v1/project/6e2a3dc5e5b142e9b7db86d0dcf1be3c/badge.svg
+    :target: https://www.quantifiedcode.com/app/project/6e2a3dc5e5b142e9b7db86d0dcf1be3c
+    :alt: Code issues
 
-.. image:: https://landscape.io/github/asmodehn/pyzmp/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/asmodehn/pyzmp/master
-   :alt: Code Health
+.. |requires| image:: https://requires.io/github/asmodehn/pyzmp/requirements.svg?branch=master
+    :alt: Requirements Status
+    :target: hhttps://requires.io/github/asmodehn/pyzmp/requirements/?branch=master
 
-.. image:: https://www.quantifiedcode.com/api/v1/project/6e2a3dc5e5b142e9b7db86d0dcf1be3c/badge.svg
-  :target: https://www.quantifiedcode.com/app/project/6e2a3dc5e5b142e9b7db86d0dcf1be3c
-  :alt: Code issues
+.. |landscape| image:: https://landscape.io/github/asmodehn/pyzmp/master/landscape.svg?style=flat
+    :target: hhttps://landscape.io/github/asmodehn/pyzmp/master
+    :alt: Code Quality Status
+
+.. |version| image:: https://img.shields.io/pypi/v/pyzmp.svg?style=flat
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/pyzmp
+
+.. |downloads| image:: https://img.shields.io/pypi/dm/pyzmp.svg?style=flat
+    :alt: PyPI Package monthly downloads
+    :target: https://pypi.python.org/pypi/pyzmp
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/pyzmp.svg?style=flat
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/pyzmp
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/pyzmp.svg?style=flat
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/pyzmp
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/pyzmp.svg?style=flat
+    :alt: Supported implementations
+    :target: https://pypi.python.org/pypi/pyzmp
+
+.. |ros_indigo_pkg| image:: https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/indigo/pyzmp
+    :alt: ROS Indigo Build
+    :target: https://travis-ci.org/asmodehn/pyzmp-rosrelease/branches
+
+.. |ros_jade_pkg| image:: https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/jade/pyzmp
+    :alt: ROS Jade Build
+    :target: https://travis-ci.org/asmodehn/pyzmp-rosrelease/branches
+
+.. |ros_kinetic_pkg| image:: https://travis-ci.org/asmodehn/pyzmp-rosrelease.svg?branch=release/kinetic/pyzmp
+    :alt: ROS Kinetic Build
+    :target: https://travis-ci.org/asmodehn/pyzmp-rosrelease/branches
+
+.. end-badges
+
+
+
 
 PyZMP is a multiprocess library based on ZeroMQ.
 
@@ -50,13 +108,8 @@ Repository structure
 This repository has a few main branches:
 
 - master : main branch, python dev workflow, releasing version tags into a pip package.
-- indigo-devel : current indigo-based ongoing development. catkin dev workflow.
-- indigo : current indigo-based release (ROS pkg - tags attempting to match)
-- <ros_distro> : current <ros_distro>-based release (ROS pkg)
 
 Apart from these we follow a `feature branching workflow <https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow>`_
-
-WARNING: This repository structure is currently being implemented...
 
 
 How to use
@@ -102,6 +155,13 @@ tox
 
 Note : Tox envs are recreated every time to ensure consistency.
 So it s better to develop while in a non-tox-managed venv.
+
+
+Tutorials and examples
+----------------------
+A good example showing use of pyzmp, `simple RPC client/server example <http://pyzmp.readthedocs.io/en/latest/tutorial.html#simple-rpc-client-server-example>`_
+
+tutorials implementing `multi node communication <https://github.com/dhirajdhule/pyzmp_tutorials>`_ (under development)
 
 Roadmap
 -------
